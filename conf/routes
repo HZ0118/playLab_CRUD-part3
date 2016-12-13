@@ -13,6 +13,8 @@ GET     /products                   controllers.HomeController.products
 # Request to load the add product form
 GET     /addproduct                 controllers.HomeController.addProduct
 
+GET     /updateProduct/:id          controllers.HomeController.updateProduct(id:Long)
+
 # Data submitted by the form
 POST    /addProductSubmit           controllers.HomeController.addProductSubmit
 
